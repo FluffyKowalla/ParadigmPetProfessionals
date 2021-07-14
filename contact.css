@@ -1,0 +1,95 @@
+ Scrolling sticky navbar with JavaScript 
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #69C;
+  }
+
+  .active{
+    background-color: #69C;
+  }
+  
+  #head {
+    background-color: white;
+    text-align: left;
+  }
+
+  #head img {
+    height: 160px;
+    width: 500px;
+  }
+
+  #head h3{
+    text-align: center;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #003B6D;
+  }
+  
+  #navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #676767;
+    color: white;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  
+  
+  .imgContainer {
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 200px;
+    align-content: center;
+    background-color: #676767;
+  }
+
+  .imgContainer img {
+    height: 500px;
+    width: 100%;
+  }
+
+  .formContainer {
+    padding-left: 200px;
+    padding-left: 200px;
+    align-content: center;
+    background-color: #69C;
+  }
+
+  .site-footer {
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    background-color: #676767;
+  }
+
+  .footer-content{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .footer-content a{
+    color: #f2f2f2;
+  }

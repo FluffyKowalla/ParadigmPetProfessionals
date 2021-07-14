@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div id="head">
+                <img src="images/Picture1.png" alt="paradigm pet professionals logo"><br>
+                <h3>Evidence-based pet care advice for every pet lover</h3><br>
+                <div id="navbar">
+                    <a class="active" href="contact.html">Contact</a>
+                    <a href="birds.html">Birds</a>
+                    <a href="cats.html">Cats</a>
+                    <a href="dogs.html">Dogs</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="imgContainer">
+            <img src="images/Picture14.jpg" alt="Individuals conversing about business">
+        </div>
+        
+        <div class="formContainer">
+            <form action="/action_page.php">
+                <strong><small>(Required)</small></strong><br><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="John" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="doe.john21@gmail.com" required><br>
+                <label for="phone">Enter a phone number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-452-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+                <label for="timeZone">Time Zone:</label><br>
+                <input type="text" id="timeZone" name="timeZone" placeholder="Central Pacific" required><br>
+                <textarea name="message" style="width:500px; height:300px;" required>The cat was playing in the garden.</textarea><br><br>
+                <strong><small>Additional information (optional)</small></strong><br><br>
+                <label for="petName">Pets Name:</label><br>
+                <input type="text" id="petName" name="petName" placeholder="Max"><br>
+                <label for="type">Pet type:</label><br>
+                <input type="text" id="type" name="type" placeholder="Pitbull"><br>
+                <label for="age">Pets age:</label><br>
+                <input type="number" id="age" name="age" placeholder="3"><br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
+
+        <div class="imgContainer">
+            <img src="images/Picture15.jpg" alt="Proffessionals at business meeting">
+        </div>
+
+        <script>
+            window.onscroll = function() {navFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function navFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <a href="Landing.html">Home ~ </a>
+                <a href="dogs.html">Dogs ~ </a>
+                <a href="cats.html">Cats ~ </a>
+                <a href="birds.html">Birds ~ </a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+    </body>
+    
+</html>
